@@ -62,9 +62,9 @@ public class AuthenticationFilter implements Filter {
 		chain.doFilter(request, response);
 	}
 	private boolean checkPathAndMathod(String path, String method) {
-		if("/account/register".equalsIgnoreCase(path)) return false;
-		String[] arg = path.split("/");
-		if(arg[0]=="forum"&&(arg[1]=="post"||arg[1]=="posts")&& "Get".equalsIgnoreCase(method)) return false;
+	//	if("/account/register".equalsIgnoreCase(path)) return false;
+	//	String[] arg = path.split("/");
+	//	if(arg[0]=="forum"&&(arg[1]=="post"||arg[1]=="posts")&& "Get".equalsIgnoreCase(method)) return false;
 		
 		return true;
 	}
